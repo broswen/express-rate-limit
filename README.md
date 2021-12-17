@@ -11,7 +11,7 @@ Fixed Window
 
 Sets rate limiting to 10 requests in a 1 second fixed window.
 ```typescript
-// fixedWindow(periodInMillis, count, redisClient)
+// fixedWindow(periodInMillis, limit, redisClient)
 app.use(fixedWindow(1000, 10, client))
 ```
 
